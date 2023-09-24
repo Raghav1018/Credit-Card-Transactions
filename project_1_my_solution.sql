@@ -54,7 +54,7 @@ HAVING SUM(CASE WHEN card_type='Gold' THEN amount ELSE 0 END)>0
 ORDER BY gold_percentage;
 
 
---5- write a query to print 3 columns:  city, highest_expense_type , lowest_expense_type (example format : Delhi , bills, Fuel)(DOUBT)
+--5- write a query to print 3 columns:  city, highest_expense_type , lowest_expense_type (example format : Delhi , bills, Fuel)
 
 
 WITH city_wise_exp AS(SELECT city,exp_type,SUM(amount) AS total_amount
@@ -88,7 +88,7 @@ ORDER BY female_contribution DESC;
 
 
 
---7 7- which card and expense type combination saw highest month over month growth in Jan-2014(not showing answer)
+--7 7- which card and expense type combination saw highest month over month growth in Jan-2014
 
 
 
